@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BG LOGISTIC — Финансовый отчёт 2016–2022</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #002e5d, #0079c2);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+    .square-pattern {
+      background-image: url('assets/img/squares-bg.svg');
+      background-repeat: repeat;
+      background-size: contain;
+    }
+    .slide {
+      min-height: 100vh;
+      padding: 4rem 2rem;
+    }
+    .title-shadow {
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+  <!-- Слайд 1: Обложка -->
+  <section class="slide flex flex-col justify-center items-center text-center square-pattern">
+    <img src="assets/img/bglogistic-logo.svg" alt="BG LOGISTIC Logo" class="w-40 mb-6">
+    <h1 class="text-5xl font-bold title-shadow">Финансовый отчёт</h1>
+    <p class="text-xl mt-4">2016 – 2022</p>
+    <p class="text-lg mt-2">+ подготовка к включению данных за 2023–2024</p>
+  </section>
+
+  <!-- Слайд 2: О компании -->
+  <section class="slide bg-white text-blue-900">
+    <h2 class="text-4xl font-bold mb-6">О компании BG LOGISTIC</h2>
+    <p class="text-lg max-w-3xl mx-auto">
+      BG LOGISTIC — ведущий российский 3PL-оператор, предоставляющий услуги ответственного хранения и логистического аутсорсинга. С момента основания в 2016 году компания демонстрирует устойчивый рост, расширяя своё присутствие по всей стране.
+    </p>
+  </section>
+
+  <!-- Слайд 3: Путь компании (шкала) -->
+  <section class="slide">
+    <h2 class="text-4xl font-bold mb-8">Путь компании 2016–2022</h2>
+    <div class="relative max-w-5xl mx-auto">
+      <div class="border-l-4 border-blue-300 ml-4">
+        <div class="ml-6 mb-10">
+          <h3 class="text-xl font-semibold">2016 — Запуск</h3>
+          <p class="text-sm">Создание компании, первые 51 клиент, выручка: 9,5 млн ₽.</p>
+        </div>
+        <div class="ml-6 mb-10">
+          <h3 class="text-xl font-semibold">2017 — Рост и диверсификация</h3>
+          <p class="text-sm">Открытие ОТЛ, новые клиенты и локации, выручка ОСЛ: 51,6 млн ₽.</p>
+        </div>
+        <div class="ml-6 mb-10">
+          <h3 class="text-xl font-semibold">2018 — WMS и якорные клиенты</h3>
+          <p class="text-sm">Решение о внедрении WMS, клиент Ball Всеволожск, выручка ОСЛ: 109,6 млн ₽.</p>
+        </div>
+        <div class="ml-6 mb-10">
+          <h3 class="text-xl font-semibold">2019 — Георасширение</h3>
+          <p class="text-sm">Челябинск, Новосибирск, мульти-локации, выручка ОСЛ: 198,4 млн ₽.</p>
+        </div>
+        <div class="ml-6 mb-10">
+          <h3 class="text-xl font-semibold">2020 — Устойчивость</h3>
+          <p class="text-sm">Пандемия, рост до 418 млн ₽ ОСЛ, проект Toyota, Москва.</p>
+        </div>
+        <div class="ml-6 mb-10">
+          <h3 class="text-xl font-semibold">2021 — Пересборка стратегии</h3>
+          <p class="text-sm">Фокус на прибыль, внедрение БДР, чистая прибыль отрицательная из-за инвестиций.</p>
+        </div>
+        <div class="ml-6 mb-10">
+          <h3 class="text-xl font-semibold">2022 — Укрепление</h3>
+          <p class="text-sm">Максимальная маржинальность, рост ОСЛ до 482 млн ₽, +41,5 млн ₽ чистой прибыли.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Слайд 4: Финансовые показатели -->
+  <section class="slide bg-white text-blue-900">
+    <h2 class="text-4xl font-bold mb-8">Финансовая динамика 2016–2022</h2>
+    <canvas id="finChart" width="800" height="400" class="mx-auto"></canvas>
+  </section>
+
+  <!-- Слайд 5: 2023–2024 -->
+  <section class="slide">
+    <h2 class="text-3xl font-bold mb-4">2023–2024: Данные скоро появятся</h2>
+    <p class="text-lg max-w-2xl text-center mx-auto">
+      Этот раздел предназначен для будущей интеграции. После загрузки новых Excel-данных сюда будет автоматически подставлена новая инфографика и текстовый анализ.
+    </p>
+  </section>
+
+  <!-- Слайд 6: Контакты -->
+  <section class="slide bg-blue-900 text-white">
+    <h2 class="text-3xl font-bold mb-4">Контакты</h2>
+    <p>Центральный офис: Санкт-Петербург, Колпинское шоссе, 135, ст.1</p>
+    <p>Телефон: 8 (800) 555-15-15</p>
+    <p>E-mail: info@bglogistic.ru</p>
+    <p>Сайт: <a href="https://bg-logistic.ru" class="underline">bg-logistic.ru</a></p>
+  </section>
+
+  <!-- JS: Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('finChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+        datasets: [
+          {
+            label: 'ОСЛ (млн ₽)',
+            data: [9.5, 51.6, 109.6, 198.4, 418.0, 297.2, 482.9],
+            backgroundColor: '#0079c2'
+          },
+          {
+            label: 'ОТЛ (млн ₽)',
+            data: [0, 2.2, 7.1, 19.2, 27.6, 12.5, 9.3],
+            backgroundColor: '#00b4f0'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: {
+              color: '#1f2937'
+            }
+          }
+        },
+        scales: {
+          y: {
+            ticks: {
+              color: '#1f2937'
+            }
+          },
+          x: {
+            ticks: {
+              color: '#1f2937'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
